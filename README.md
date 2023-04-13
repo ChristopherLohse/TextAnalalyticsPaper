@@ -38,9 +38,9 @@ it is also possible to see the output as a jupyter notebook in the folder notebo
 
 runs all the experiments takes a while:
 ````
-
-````
 python experiments_full.py 
+````
+
 
 runs experiments with saved data:
 
