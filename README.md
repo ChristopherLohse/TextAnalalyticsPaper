@@ -27,7 +27,6 @@ pip install - r requirements.tx
 ### Run the crawler:
 
 ````
-cd sripts
 python lyrics_chord_scrapping.py
 ````
 
@@ -37,10 +36,18 @@ it is also possible to see the output as a jupyter notebook in the folder notebo
 
 ### Run the analysis:
 
+runs all the experiments takes a while:
 ````
-cd sripts
-python experiments.py
+
 ````
+python experiments_full.py 
+
+runs experiments with saved data:
+
+````
+python experiments_fast.py 
+````
+
 
 
 

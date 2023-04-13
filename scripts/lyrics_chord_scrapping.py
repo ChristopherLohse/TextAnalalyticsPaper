@@ -25,7 +25,6 @@ import warnings
 import re
 import sys
 import os
-os.chdir('..')
 
 
 # %%
@@ -285,7 +284,7 @@ def detect_language(text):
     return lang
 
 
-combined_data = pd.read_csv('final/rock_2010.csv')
+combined_data = pd.read_csv('Data/final/rock_2010.csv')
 combined_data.drop_duplicates(subset=['Artist', 'Song'], inplace=True)
 combined_data['Language'] = combined_data['Lyric'].apply(detect_language)
 
@@ -321,7 +320,7 @@ english_df = english_artists_df.loc[english_mask]
 
 
 # %%
-english_df.to_csv('final/onlyEng_rock_2010.csv', index=False)
+english_df.to_csv('Data/final/onlyEng_rock_2010.csv', index=False)
 
 
 # %%
